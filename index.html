@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dean Bullock CV - Angular Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Monaspace Neon', monospace;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
@@ -257,8 +258,7 @@
 
         <div class="section education">
             <h2>Education</h2>
-            <h3>BSc [Hons] Internet Computing - University of Glamorgan</h3>
-            <p><em>2011</em></p>
+            <h3>BSc [Hons] Internet Computing - University of Glamorgan <em>2011</em></h3>
         </div>
 
         <div class="section skills">
@@ -310,15 +310,15 @@
 
             // Switch emoji based on mode
             if (body.classList.contains('dark-mode')) {
-                toggleBtn.textContent = '🌙'; // Moon for dark mode
+                toggleBtn.textContent = '🌙'; 
             } else {
-                toggleBtn.textContent = '☀️'; // Sun for light mode
+                toggleBtn.textContent = '☀️'; 
             }
         }
 
         document.addEventListener("DOMContentLoaded", function() {
             const toggleBtn = document.getElementById('toggleModeBtn');
-            toggleBtn.textContent = '🌙'; // Moon for dark mode by default
+            toggleBtn.textContent = '🌙'; 
         });
     </script>
 
