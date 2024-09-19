@@ -3,12 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: About
+title: About me
 ---
 
 ### Hello! 👋
 
-I’m **Dean Bullock**, a Senior Frontend Developer with over 13 years of experience specializing in **Angular**. Currently, I’m working at **CGI Group**, where I’ve had the opportunity to contribute to large-scale modernization projects, including the highly complex **DARTS project** for HMCTS.
+I’m **Dean**, a Principal Software Engineer with over 13 years of experience specializing in **Angular**. Currently, I’m working at **CGI Group**, where I’ve had the opportunity to contribute to large-scale modernization projects, including the highly complex **DARTS project** for HMCTS.
 
 With a passion for crafting clean, efficient, and user-friendly web applications, I’m always eager to stay on top of the latest trends in frontend development. My expertise extends beyond Angular, with experience in **C# .NET** on the backend. My **BSc [Hons] in Internet Computing** from the University of South Wales has also provided me with a strong foundation in web technologies.
 
