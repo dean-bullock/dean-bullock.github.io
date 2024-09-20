@@ -1,5 +1,5 @@
 ---
 layout: blog
-title: Angular Blog
+title: Blog
 permalink: /blog/
 ---

@@ -4,7 +4,15 @@
 
 @import "minima";
 
-img[alt="Profile Photo"] { 
-    width: 200px; 
-    border-radius: 50%;
+img { 
+    width: 3rem; 
+    height: 3rem;
+}
+
+.tech-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }

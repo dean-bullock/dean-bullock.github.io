@@ -4,6 +4,9 @@ title: CV
 permalink: /cv/
 ---
 
+
+
+
 ## Professional Summary
 Senior Frontend Developer specializing in Angular with over 13 years of experience developing scalable, high-performance web applications. Expertise includes modern JavaScript, TypeScript, and responsive design, with a deep focus on delivering user-friendly interfaces.
 
