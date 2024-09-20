@@ -57,12 +57,12 @@ In this example, the parent passes the `parentMessage` string to the child compo
 With signal inputs, Angular replaces this `@Input()` property with a signal that reacts to changes automatically.
 
 ```typescript
-import { Signal, signal } from '@angular/core';
+import { signal, input } from '@angular/core';
 
 // Parent Component
 @Component({
   selector: 'app-parent',
-  template: `<app-child [message]="parentMessageSignal"></app-child>`,
+  template: `<app-child [message]="parentMessageSignal()"></app-child>`,
 })
 export class ParentComponent {
   parentMessageSignal = signal('Hello from Parent!');
@@ -74,11 +74,11 @@ export class ParentComponent {
   template: `<p>{{ message() }}</p>`,
 })
 export class ChildComponent {
-  @Input({ alias: 'message' }) message!: Signal<string>;
+  message = input('');
 }
 ```
 
-In this setup, the parent component defines a signal `parentMessageSignal` using Angular's `signal()` function. The child component now receives a signal input, allowing it to reactively update the UI whenever the signal's value changes.
+In this setup, the parent component defines a signal `parentMessageSignal` using Angular's `signal()` function. The child component now receives a readonly signal `input()`, allowing it to reactively update the UI whenever the signal's value changes.
 
 The notable differences are:
 - The child component now receives a signal as its input rather than a static property.
