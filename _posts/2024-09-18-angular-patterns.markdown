@@ -30,6 +30,8 @@ Let’s look at an example to understand how signal inputs fit into Angular appl
 
 Here’s a quick refresher on how we typically pass data from a parent to a child component using the `@Input()` decorator.
 
+{% raw %}
+
 ```typescript
 // Parent Component
 @Component({
@@ -46,7 +48,7 @@ export class ParentComponent {
   template: `<p>{{ message }}</p>`,
 })
 export class ChildComponent {
-  @Input() message!: string;
+  @Input() message = '';
 }
 ```
 
@@ -77,6 +79,7 @@ export class ChildComponent {
   message = input('');
 }
 ```
+{% endraw %}
 
 In this setup, the parent component defines a signal `parentMessageSignal` using Angular's `signal()` function. The child component now receives a readonly signal `input()`, allowing it to reactively update the UI whenever the signal's value changes.
 
